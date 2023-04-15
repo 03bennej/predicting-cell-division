@@ -152,4 +152,3 @@ if __name__ == "__main__":
 
     ERK_low_pad.to_json(os.path.join(path_test_2, "ERK.json"))
     Akt_low_pad.to_json(os.path.join(path_test_2, "Akt.json"))
-
