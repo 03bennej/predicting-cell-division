@@ -2,19 +2,16 @@
 
 The following instructions can be run on a *nix machine to reproduce our work:
 
-1. Download and install python.
+1. Download and install Python. Our results were produced using Python 3.11.5, and the specific versions of packages in ``requirements.txt`` may require it, but you may try with another Python version...
 
 2. Fork the project repo and navigate to it on your local machine. Typing `make help` gives a complete list of make commands to be run consecutively.
 
 3. Type `make all` to run all make commands consecutively, though this will take some time. Instead you can run step-by-step:
     * Type `make venv` to create a virtual environment and download all required python packages. 
-    * Type `make preprocessed` to preprocess the raw data for classification. In `Makefile`, edit `split_seed` for a different train/test split, or `truncate_seed` for a different sampling of truncated time points.
-    * Type `make cv` to run a cross validation of all considered methods. Cross validation can be run for individual methods instead, e.g. `make dl` performs cross validation on all deep learning methods, whereas `make transformations` performs cross validation on all transformations, whereas `make dwt` performs cross validation on the DWT method only. See `make help` for more commands.
-    * Type `make final-models` to train final models. 
+    * Type `make processed` to process the raw data for classification. In `Makefile`, edit `split_seed` for a different train/test split, or `truncate_seed` for a different sampling of truncated time points.
+    * Cross validated performance analysis can be run for a number of individual methods, e.g. `make lstm` analyses the LSTM method. Inspect the Makefile, or type `make help` for more commands.
+    * Type `make models` to train final ensemble models. 
+    * Type `make interpretation` to run the interpretation algorithm.
     * Type `make test` to test models on test sets.
 
-4. Cross validation and test results can be found in the "results" folder. 
-
-5. Visualisations can be found in various notebooks in the "notebooks" folder.
-
-6. Final models can be found in "models". They are all heterogeneous ensembles generated using Ensemble Integration (EI). We refer the user to the [EI github repo](https://github.com/GauravPandeyLab/ei-python) for instructions on their use.
+4. Results are saved in the ``results/`` folder. We provide notebooks that provide visualizations and further analysis in ``notebooks/``.
