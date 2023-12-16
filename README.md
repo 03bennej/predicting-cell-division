@@ -1,8 +1,6 @@
-# Predicting cell division using ERK and Akt kinase activity time courses
-
 <div align="center">
-  <h1>Supporting code for the paper "Phenotypic plasticity: A missing element in the theory of vegetation pattern formation"</h1>
-  <img src="https://github.com/03bennej/predicting-cell-division/blob/main/figures/workflow/workflow.png" width="350"> 
+  <h1>Low-frequency ERK and Akt activity dynamics are predictive of stochastic cell division events"</h1>
+  <img src="https://github.com/03bennej/predicting-cell-division/blob/main/figures/workflow/workflow.png" width="700"> 
 </div>
 
 The following instructions can be run on a *nix machine to reproduce our work:
