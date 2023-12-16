@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>Low-frequency ERK and Akt activity dynamics are predictive of stochastic cell division events"</h1>
-  <img src="https://github.com/03bennej/predicting-cell-division/blob/main/figures/workflow/workflow.png" width="700"> 
+  <h1>Supporting code for the paper "Low-frequency ERK and Akt activity dynamics are predictive of stochastic cell division events"</h1>
+  <img src="https://github.com/03bennej/predicting-cell-division/blob/main/figures/workflow/workflow.png" width="800"> 
 </div>
 
 The following instructions can be run on a *nix machine to reproduce our work:
