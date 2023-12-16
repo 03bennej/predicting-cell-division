@@ -1,5 +1,10 @@
 # Predicting cell division using ERK and Akt kinase activity time courses
 
+<div align="center">
+  <h1>Supporting code for the paper "Phenotypic plasticity: A missing element in the theory of vegetation pattern formation"</h1>
+  <img src="https://github.com/03bennej/predicting-cell-division/blob/main/figures/workflow/workflow.png" width="350"> 
+</div>
+
 The following instructions can be run on a *nix machine to reproduce our work:
 
 1. Download and install Python. Our results were produced using Python 3.11.5, and the specific versions of packages in ``requirements.txt`` may require it, but you may try with another Python version...
