@@ -20,7 +20,7 @@ def low_pass_filter(df, thresh, wavelet):
 
 def dwt(df, wavelet, mode='constant', level=None, axis=-1):
     
-    df = copy(df).to_numpy()
+    df = np.asarray(df)
     coeffs = pywt.wavedec(df, wavelet, mode, level, axis)
     dfs = [pd.DataFrame(array) for array in coeffs]
 
@@ -29,7 +29,7 @@ def dwt(df, wavelet, mode='constant', level=None, axis=-1):
 
 def idwt(coeffs_dfs, wavelet, mode="constant", axis=-1):
 
-    coeffs = [df.to_numpy() for df in coeffs_dfs]
+    coeffs = [np.asarray(df) for df in coeffs_dfs]
 
     data = pywt.waverec(coeffs, wavelet, mode, axis)
 
@@ -37,8 +37,7 @@ def idwt(coeffs_dfs, wavelet, mode="constant", axis=-1):
 
 def haar_point_inverse(coeffs, index, mode="constant", axis=-1):
 
-    coeffs = deepcopy(coeffs)
-    approximation = deepcopy(coeffs[0].to_numpy())
+    approximation = deepcopy(np.asarray(coeffs[0]))
     approximation[:, np.arange(approximation.shape[1])!=index] = np.nan
     coeffs[0] = pd.DataFrame(approximation)
 
