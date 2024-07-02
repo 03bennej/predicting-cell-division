@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Supporting code for the paper <a href="https://www.nature.com/articles/s41540-024-00389-7" target="_blank">Low-frequency ERK and Akt activity dynamics are predictive of stochastic cell division events</a></h1>
+  <h1>Supporting code for the paper: "<a href="https://www.nature.com/articles/s41540-024-00389-7" target="_blank">Low-frequency ERK and Akt activity dynamics are predictive of stochastic cell division events</a>"</h1>
   <img src="https://github.com/03bennej/predicting-cell-division/blob/main/figures/workflow/workflow.png" width="800"> 
 </div>
 
